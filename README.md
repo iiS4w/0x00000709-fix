@@ -1,6 +1,7 @@
 # 0x00000709-fix
 Fix the popular Windows 11 error 0x00000709 (Operation could not be completed), when trying to connect to a shared printer over LAN.
-__________________________________________________
+
+
 # exe files
 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=55319">LGPO.exe</a> is a new command-line utility to automate the management of local group policy.
 

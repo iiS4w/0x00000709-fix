@@ -2,11 +2,29 @@
 TITLE 0x00000709 FIX [iS4w]
 COLOR 2
 
+ goto check_Permissions
+ :check_Permissions
+ echo Administrative permissions required. Detecting permissions...
+ echo.
+ echo.
+ net session >nul 2>&1
+ if [%errorLevel%] == [0] (
+ 	goto start
+ ) else (
+ 	echo 			Failure: PLEASE RUN AS ADMINISTRATOR.
+ )
+ pause>nul
+exit
+
+:start
+cls
 ECHO 			--------------------------------------
 ECHO 			   0x00000709 ERROR FIX (WINDOWS 11)
 ECHO 			--------------------------------------
 ECHO                                      [iS4w]
-PAUSE
+ECHO.
+ECHO PRESS ANY KEY TO START.
+PAUSE>nul
 ECHO ------------------------------------
 ECHO ENABLING LPD and LPR FEATURES.
 ECHO ------------------------------------

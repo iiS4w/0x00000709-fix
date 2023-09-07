@@ -75,7 +75,7 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print" /v RpcAuthnL
 timeout 3 > nul
 
 ECHO ----------------------------------------
-ECHO Windows PERMISSIONS ON REGISTRY EDITOR.
+ECHO WINDOWS PERMISSIONS ON REGISTRY EDITOR.
 ECHO ----------------------------------------
 echo HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows [7]>"%temp%\winper.txt"
 "%~dp0\regini.exe" "%temp%\winper.txt"
